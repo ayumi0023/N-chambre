@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+
+    <meta http-equiv="content-type" charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>N.Game</title>
+    <link rel="stylesheet" type="text/css" href="ghc.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'tbp5ksz',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+
+    </script>
+</head>
+
+<body>
+    <div id="top"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li class="title">Chambre</li>
+                </a>
+                <a href="game.html">
+                    <li>Game/Stage</li>
+                </a>
+                <a href="hintA.html">
+                    <li>Hint/Answer</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <p class="title">Game</p>
+        <p>ステージを選択してください。<br>画像をクリックするとゲーム画面へ移動します。</p>
+        <ul>
+            <li>Tutorial / 初級</li>
+            <li>Level ★☆☆☆☆</li>
+            <li><a href="https://unityroom.com/games/chambre1" target="_blank" rel="noopener noreferrer"><img class="indexsmn" src="nigero1smn.JPG" width="300" height="200" border=1></a></li>
+            <li><a href="hintA.html#hint1">ヒントを見る</a></li>
+            <li><a href="hintA.html#ans1">答えを見る</a></li>
+        </ul>
+
+        <ul>
+            <li>Intermediate / 中級</li>
+            <li>Level ★★☆☆☆</li>
+            <li><a href="https://unityroom.com/games/chambre2" target="_blank" rel="noopener noreferrer"><img class="indexsmn" src="nigero2smn.JPG" width="300" height="200" border=1></a></li>
+            <li><a href="hintA.html#hint2">ヒントを見る</a></li>
+            <li><a href="hintA.html#ans2">答えを見る</a></li>
+        </ul>
+
+        <ul>
+            <li>Superior / 上級</li>
+            <li>Level ★★★☆☆</li>
+            <li><a href="https://unityroom.com/games/chambre3" target="_blank" rel="noopener noreferrer"><img class="indexsmn" src="nigero3smn.JPG" width="300" height="200" border=1></a></li>
+            <li><a href="hintA.html#hint3">ヒントを見る</a></li>
+            <li><a href="hintA.html#ans3">答えを見る</a></li>
+        </ul>
+
+    </main>
+    <footer>
+        　　<ul>
+            <li><a href="#top">Top </a></li>
+            <li><a href="index.html">ChambreTop</a></li>
+            <li><a href="game.html">Game/Stage</a></li>
+            <li><a href="hintA.html">Hint/Answer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="indexHorror.html" class="aHorror">AnotherChambre</a></li>
+        </ul>
+
+        <small>©2021graduationAN</small>
+    </footer>
+
+
+    
+
+</body>
