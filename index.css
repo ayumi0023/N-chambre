@@ -1,0 +1,185 @@
+@charset="utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: kozuka-gothic-pro, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    background-image: url(topimg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 50%;
+    width: 3em;
+    right: 10px;
+    height: 1em;
+    color: #000000;
+
+    span {
+        color: #000000;
+        text-align: center;
+    }
+}
+
+.scrollP {
+    font-size: 20px;
+    transform: rotate(90deg);
+}
+
+.arrow {
+    position: absolute;
+    top: 3.5em;
+    left: 1.25em;
+    animation: 2s arrow-animation infinite ease-in-out;
+    width: 0;
+    height: 5em;
+    border: .5px solid #202020;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: -1px;
+        height: 10px;
+        left: -2px;
+        width: 1px;
+        height: 10px;
+        border-top: 10px solid #202020;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+    }
+}
+
+@keyframes arrow-animation {
+    0% {
+        height: 1em;
+    }
+
+    66% {
+        height: 5em;
+    }
+}
+
+header {
+    padding-top: 10px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header li {
+    display: inline;
+    margin: 20px 50px;
+    font-size: 30px;
+}
+
+.title {
+    font-family: kozuka-gothic-pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+header li:hover {
+    border-bottom: 3px solid #000000;
+    color: #808080;
+}
+
+main {
+    background: rgba(100%, 100%, 100%, 0.9);
+    margin-top: 600px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+main .title {
+    margin: 50px 0;
+}
+
+main p {
+    margin: 30px 0;
+}
+
+main a {
+    text-decoration: none;
+    color: #000000;
+}
+
+main a:hover {
+    color: #808080;
+}
+
+main ul {
+    padding: 70px 0;
+}
+
+main li {
+    display: inline;
+    margin: 0 20px;
+}
+/*画像のフィルター関連*/
+.indexsmn {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    border: 1px solid #707070;
+}
+
+.indexsmn:hover {
+    -webkit-filter: grayscale(40%);
+    filter: grayscale(40%);
+}
+
+/*全通常ページフッター共通（ghcページはホームリンクつける）*/
+footer {
+    background: rgb(145, 141, 138);
+    padding-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    color: #303030;
+}
+
+footer ul {
+    margin-left: 300px;
+    padding-bottom: 50px;
+}
+
+footer li {
+    margin: 10px 0;
+}
+
+footer .aHorror {
+    color: #A30000;
+}
+
+footer .aHorror:hover {
+    color: #560000;
+}
+
+@media screen and (max-width:1130px) {}
+
+@media screen and (max-width:599px) {}
