@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+
+    <meta http-equiv="content-type" charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>N.Contact</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'tbp5ksz',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+
+    </script>
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li class="title">Chambre</li>
+                </a>
+                <a href="game.html">
+                    <li>Game/Stage</li>
+                </a>
+                <a href="hintA.html">
+                    <li>Hint/Answer</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <p class="title">Contact</p>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="onLoad()"></iframe>
+
+        <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScHL3I7aIhY07D390h4zVl21iUvdotTGg2FHCByoG3G6N4hQQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
+            <ul>
+                <li>
+
+                    <label for="rendou" class="left">Name：</label>
+                    <input id="rendou" type="text" name="entry.763663010" placeholder="名前">
+
+                </li>
+
+                <li>
+
+                    <label for="mail" class="left">Mail address：</label>
+                    <input id="mail" type="email" name="entry.346050641" placeholder="メールアドレス">
+
+                </li>
+                <!--プレイ済ステージ-->
+                <li>
+                    <label for="content" class="left">プレイしたステージ：</label>
+                    <input id="level1" type="checkbox" name="entry.1312140981" value="初級">
+                    <!--<label for="level1">-->初級
+                    <!--</label>-->
+                    <input id="level2" type="checkbox" name="entry.1312140981" value="中級">
+                    <!--<label for="level2">-->中級
+                    <!--</label>-->
+                    <input id="level3" type="checkbox" name="entry.1312140981" value="上級">
+                    <!--<label for="level3">-->上級
+                    <!--</label>-->
+                    <input id="levelno" type="checkbox" name="entry.1312140981" value="なし">
+                    <!--<label for="levelno">-->なし
+                    <!--</label>-->
+
+                </li>
+
+
+                <!--問い合わせ内容-->
+                <li>
+                    <label for="content" class="left">お問い合わせ内容：</label>
+                    <input id="error" type="checkbox" name="entry.421880488" value="不具合報告">
+                    <!--<label for="error">-->不具合報告
+                    <!--</label>-->
+                    <input id="feedback" type="checkbox" name="entry.421880488" value="意見感想">
+                    <!--<label for="feedback">-->意見感想
+                    <!--</label>-->
+                    <input id="other" type="checkbox" name="entry.421880488" value="その他">
+                    <!--<label for="other">-->その他
+                    <!--</label>-->
+                </li>
+                <!--自由記述-->
+                <li>
+                    <label for="comment" class="left">詳細：</label>
+                    <textarea id="comment" name="entry.34221360" placeholder="お問い合わせ内容"></textarea>
+
+                </li>
+
+                <!--                <li>-->
+                <div class="clear"></div>
+                <!--                </li>-->
+            </ul>
+            <div class="button_wrap">
+                <input id="button" type="submit" value="Send">
+                <input id="button" type="reset" value="Reset">
+                <p id="success" style="display: none">送信が完了しました。お問い合わせありがとうございました。</p>
+            </div>
+
+        </form>
+
+
+    </main>
+
+
+    <footer>
+        　　<ul>
+            <li><a href="#top">Top </a></li>
+            <li><a href="index.html">ChambreTop</a></li>
+            <li><a href="game.html">Game/Stage</a></li>
+            <li><a href="hintA.html">Hint/Answer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="indexHorror.html" class="aHorror">AnotherChambre</a></li>
+        </ul>
+        <small>©2021graduationAN</small>
+
+    </footer>
+
+    <script type="text/javascript" src="contactsubmit.js"></script>
+</body>
