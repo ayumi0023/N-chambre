@@ -179,28 +179,28 @@ footer .aHorror {
 footer .aHorror:hover {
     color: #560000;
 }
-/* .start {
+.start {
 	background: #FFF;
 	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	z-index: 9000;
-} */
-/* .start img{
+	z-index: 200;
+}
+.start img{
     width: 300px;
     height: auto;
-} */
-/* .start p {
+}
+ .start p {
 	position: fixed;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
 /*    transform: rotateY(360deg);*/
 	display: none;
-	z-index: 9999;
-} */
+	z-index: 300;
+} 
 @media screen and (max-width:1130px) {}
 
 @media screen and (max-width:599px) {}
