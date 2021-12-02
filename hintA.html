@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+
+    <meta http-equiv="content-type" charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>N.HintAnswer</title>
+    <link rel="stylesheet" type="text/css" href="css/ghc.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'tbp5ksz',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+
+    </script>
+</head>
+
+<body>
+    <div id="top"></div>
+
+
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li class="title">Chambre</li>
+                </a>
+                <a href="game.html">
+                    <li>Game/Stage</li>
+                </a>
+                <a href="hintA.html">
+                    <li>Hint/Answer</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <p class="title">Hint/Answer</p>
+        <ul class="ulmain">
+            <li>Tutorial / 初級</li>
+            <li>Level ★☆☆☆☆</li>
+            <li><img class="hintsmn" src="img/nigero1smn.JPG" width="300" height="200" border=1></li>
+
+        </ul>
+
+        <ul class="ulmain">
+            <li>Intermediate / 中級</li>
+            <li>Level ★★☆☆☆</li>
+            <li><img class="hintsmn" src="img/nigero2smn.JPG" width="300" height="200" border=1></li>
+        </ul>
+
+        <ul class="ulmain">
+            <li>Superior / 上級</li>
+            <li>Level ★★★☆☆</li>
+            <li><img class="hintsmn" src="img/nigero3smn.JPG" width="300" height="200" border=1></li>
+
+        </ul>
+        <!--ヒント答え表-->
+        <table>
+            <!--  一段目ヒント-->
+            <tr>
+                <td>
+                    <h2 id="hint1"></h2>
+                    <details>
+                        <summary>初級 / ヒント</summary>
+                        <details class="dtitle">
+                            <summary>・家具</summary>
+                            <p>家具にカーソルをあてると虫眼鏡のマークになります。左クリックで調べていきましょう。</p>
+                        </details>
+                    </details>
+                </td>
+
+                <td>
+                    <!--                    <div class="hidden_box">
+                        <h2 id="hint2"></h2>
+                        <label for="label2">中級/ヒント</label>
+                        <input type="checkbox" id="label2" />
+                        <div class="hidden_show">-->
+                    <!--    非表示部分   -->
+                    <!--
+                            <p>・何も書かれていない紙<br>
+                                本をよく読んでください。また本は乱雑に置かれているため、テーブルのほかにも本があるかもしれません。</p>
+                            <p>・カラフルな紙<br>
+                                色の順番と部屋にあるものをよく見てください。</p>
+                            <p>・本<br>
+                                どこかにぶつけると大事なものが出てきます。</p>
+                            <p>・パスワード<br>
+                                何かをぶつけた後に出てくる文字は1回しか出ないので注意。カラフルな紙を参考にすると解けます。</p>
+-->
+
+                    <!--ここまで-->
+                    <!--
+                        </div>
+                    </div>-->
+                    <h2 id="hint2"></h2>
+                    <details>
+                        <summary>中級 / ヒント</summary>
+                        <details class="dtitle">
+                            <summary>・何も書かれていない紙</summary>
+                            <p>本をよく読んでください。また本は乱雑に置かれているため、テーブルのほかにも本があるかもしれません。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・カラフルな紙</summary>
+                            <p>色の順番と部屋にあるものをよく見てください。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・本</summary>
+                            <p>どこかにぶつけると大事なものが出てきます。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・パスワード</summary>
+                            <p>何かをぶつけた後に出てくる文字は1回しか出ないので注意。カラフルな紙を参考にすると解けます。</p>
+                        </details>
+                    </details>
+
+                </td>
+                <td>
+
+                    <!--
+                    <div class="hidden_box">
+                        <h2 id="hint3"></h2>
+                        <label for="label3">上級/ヒント</label>
+                        <input type="checkbox" id="label3" />
+                        <div class="hidden_show">
+-->
+                    <!--    非表示部分   -->
+                    <!--
+                            <p>・フレッシュミルク<br>
+                                ミルクを使用できるものが部屋に隠されています。ヒントはラグを調べてください。</p>
+                            <p>・パスワードの順番<br>
+                                どこかに書いてあるかもしれません。画面下部を集中して見てください。</p>
+                            <p>・パスワード<br>
+                                額縁に書いてある数字と数字の後ろの色がヒントとなります。</p>
+                            <p>・謎の鍵<br>
+                                パスワードを解いた後、部屋を見てみましょう。解く前と違う部分があります。</p>
+                            <details>
+                                <summary>・氷漬けの鍵</summary>
+                                <p>溶かすために必要なものを探しましょう。</p>
+
+                            </details>
+-->
+                    <!--ここまで-->
+                    <!--
+                        </div>
+                    </div>
+-->
+                    <h2 id="hint3"></h2>
+                    <details>
+                        <summary>上級 / ヒント</summary>
+                        <details class="dtitle">
+                            <summary>・フレッシュミルク</summary>
+                            <p>ミルクを使用できるものが部屋に隠されています。ヒントはラグを調べてください。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・パスワードの順番</summary>
+                            <p>どこかに書いてあるかもしれません。画面下部を集中して見てください。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・パスワード</summary>
+                            <p>額縁に書いてある数字と数字の後ろの色がヒントとなります。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・謎の鍵</summary>
+                            <p>パスワードを解いた後、部屋を見てみましょう。解く前と違う部分があります。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・氷漬けの鍵</summary>
+                            <p>溶かすために必要なものを探しましょう。</p>
+                        </details>
+                    </details>
+                </td>
+            </tr>
+            <!--    二段目答え    -->
+            <tr>
+                <td>
+                    <h2 id="ans1"></h2>
+                    <details>
+                        <summary>初級 / 答え</summary>
+                        <details class="dtitle">
+                            <summary>・家具</summary>
+                            <p>壷を調べると鍵を入手。小さな木箱に鍵を使用できるのでクリックすると金の鍵を入手。最後にドアを調べて脱出成功。</p>
+                        </details>
+                    </details>
+                </td>
+                <td>
+                    <!--
+                    <div class="hidden_box">
+                        <h2 id="ans2"></h2>
+                        <label for="label5">中級 / 答え</label>
+                        <input type="checkbox" id="label5" />
+                        <div class="hidden_show">
+-->
+                    <!--    非表示部分   -->
+                    <!--
+                            <p>シンクの横にある小さい棚から鍵を入手。<br>
+                                大きな棚の中に小さい箱があるため鍵を使用する。<br>
+                                箱からなにも書かれていない紙を見つけた後シンクの右側に落ちている本を入手。シンクを調べると紙がカラフルな紙となる。
+                                左から”緑””紫””赤””青”の色になるので同じ色の家具を調べていく。<br>
+                                緑＝竹の鉢植え＝3<br>
+                                紫＝紫の絵＝5<br>
+                                赤＝赤い葉の木＝2<br>
+                                青＝地球儀＝1<br>
+                                紫の絵は本をぶつけると5という文字が出てくる。（メッセージは1回のみしか出ないので注意）<br>
+                                パスワードボタンを押し「3521」と入力するとドア側に球体が出てくるので調べてきれいな鍵を入手。最後にドアを調べて脱出成功。
+                            </p>
+-->
+                    <!--ここまで-->
+                    <!--
+                        </div>
+                    </div>
+-->
+                    <h2 id="ans2"></h2>
+                    <details>
+                        <summary>中級 / 答え</summary>
+                        <details class="dtitle">
+                            <summary>・鍵</summary>
+                            <p>シンクの横にある小さい棚から鍵を入手。大きな棚の中に小さい箱があるため鍵を使用する。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・何も書かれていない紙</summary>
+                            <p>箱からなにも書かれていない紙を見つけた後シンクの右側に落ちている本を入手。シンクを調べると紙がカラフルな紙となる。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・カラフルな紙</summary>
+                            <p>左から”緑””紫””赤””青”の色になるので同じ色の家具を調べていく。<br>
+                                緑＝竹の鉢植え<br>
+                                紫＝紫の絵<br>
+                                赤＝赤い葉の木<br>
+                                青＝地球儀<br></p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・本</summary>
+                            <p>紫の絵は本をぶつけると5という文字が出てくる。（メッセージは1回のみしか出ないので注意）</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・パスワード</summary>
+                            <p>パスワードボタンを押し「3521」と入力するとドア側に球体が出てくるので調べてきれいな鍵を入手。最後にドアを調べて脱出成功。</p>
+                        </details>
+                    </details>
+                </td>
+
+
+                <td>
+                    <!--
+                    <div class="hidden_box">
+                        <h2 id="ans3"></h2>
+                        <label for="label6">上級 / 答え</label>
+                        <input type="checkbox" id="label6" />
+                        <div class="hidden_show">
+                                非表示部分   
+                            <p>壷を調べると鍵を入手。小さな木箱に鍵を使用できるのでクリックすると金の鍵を入手。
+                                最後にドアを調べて脱出成功。6
+                            </p>
+-->
+                    <!--ここまで-->
+                    <!--
+                        </div>
+                    </div>
+-->
+                    <h2 id="ans3"></h2>
+                    <details class="dmain">
+                        <summary>上級 / 答え</summary>
+                        <details class="dtitle">
+                            <summary>・フレッシュミルク</summary>
+                            <p>キッチンの4つ並んでいる一番左の壷からフレッシュミルクを入手。机の積まれた本と本の間にマグカップの取っ手があるので、クリックするとコーヒーを飲むことができる。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・パスワードの順番</summary>
+                            <p>額縁側の画面に移動する。右下に濃い影があるのでクリックするとパスワードの順番が書かれたメモが出てくる。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・パスワード</summary>
+                            <p>本に書かれた色と額縁の内容を照らし合わせて解くことができる。<br>
+                                T＝赤＝2、A＝青＝3、D＝黒＝0<br>
+                                額縁の問いでは、
+                                2+3＝5・赤+青＝紫<br>
+                                5+1＝6・紫+黄＝茶<br>
+                                5＝紫＝M<br>
+                                冷蔵庫の横のメモには「F＝茶」と書いてあるので<br>
+                                6＝茶＝F
+                                パスワードの順番は「MAFMTD」なので答えは「536520」となる。
+                            </p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・謎の鍵</summary>
+                            <p>パスワードを解くとベッドの上に謎の小箱が出てくるので鍵を使用する。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・氷漬けの鍵</summary>
+                            <p>小箱から出てきたメモを使用すると氷漬けの鍵が出てくるので机の上にあるライターで溶かす。綺麗な鍵の入手後、最後にドアを調べて脱出成功。</p>
+                        </details>
+                    </details>
+                </td>
+            </tr>
+
+        </table>
+
+
+    </main>
+    <footer>
+
+        　　<ul>
+            <li><a href="#top">Top </a></li>
+            <li><a href="index.html">ChambreTop</a></li>
+            <li><a href="game.html">Game/Stage</a></li>
+            <li><a href="hintA.html">Hint/Answer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="indexHorror.html" class="aHorror">AnotherChambre</a></li>
+        </ul>
+        <small>©2021graduationAN</small>
+    </footer>
+
+
+    <script type="text/javascript" src="topanimation.js"></script>
+
+</body>
